@@ -2,6 +2,8 @@
 
 
 # Python
+
+```
 class Greeter:
     def __init__(self):
         self.greetings = {
@@ -19,8 +21,10 @@ class Greeter:
 # Создание экземпляра класса и вызов метода
 greeter = Greeter()
 greeter.greet()
+```
 
 # Java
+```
 public class Greeter {
     public void greet() {
         String[] greetings = {"Hello", "Hola", "Bonjour", "Привет", "こんにちは"};
@@ -34,10 +38,10 @@ public class Greeter {
         greeter.greet();
     }
 }
-
+```
 
 # C#
-
+```
 using System;
 
 public class Greeter {
@@ -53,9 +57,9 @@ public class Greeter {
         greeter.Greet();
     }
 }
-
+```
 # JS
-
+```
 class Greeter {
     greet() {
         const greetings = ["Hello", "Hola", "Bonjour", "Привет", "こんにちは"];
@@ -66,3 +70,4 @@ class Greeter {
 // Использование класса
 const greeter = new Greeter();
 greeter.greet();
+```
