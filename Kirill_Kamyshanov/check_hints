@@ -2,17 +2,16 @@ let jsonData = pm.response.json();
 #1-й тест
 pm.test("В ответе только мужчины", function () {
      for (let i = 0; i < jsonData.suggestions.length; i++) {
-    pm.expect(jsonData.suggestions[i].data.gender).to.not.eql("FEMALE");
+    pm.expect(jsonData.suggestions[i].data.gender).to.eql("MALE");
      }
 });
 
 #2-й тест
 pm.test("В ответе только имена", function () {
      for (let i = 0; i < jsonData.suggestions.length; i++) {
+    pm.expect(jsonData.suggestions[i].data.name).not.to.eql(null);
     pm.expect(jsonData.suggestions[i].data.surname).to.eql(null);
-        pm.expect(jsonData.suggestions[i].data.patronymic).to.eql(null);
-            pm.expect(jsonData.suggestions[i].data.source).to.eql(null);
+    pm.expect(jsonData.suggestions[i].data.patronymic).to.eql(null);
      }
 });
-
 
