@@ -8,3 +8,4 @@ class Greeter {
 // Использование класса
 const greeter = new Greeter();
 greeter.greet();
+
