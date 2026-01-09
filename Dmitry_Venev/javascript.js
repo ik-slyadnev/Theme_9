@@ -4,8 +4,5 @@ class Greeter {
         greetings.forEach(greeting => console.log(greeting));
     }
 }
-
-// Использование класса
 const greeter = new Greeter();
 greeter.greet();
-
